@@ -1,2 +1,2 @@
-# test-pago-paypa
+# test-pago-paypal
 Para mi mano Joseph 
