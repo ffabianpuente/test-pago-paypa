@@ -43,8 +43,8 @@
           return actions.order.capture().then( function (detalles) {
               // llamar a api para actualizar datos de la db, actualizar compra
             // Successful capture! For dev/demo purposes:
-            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-            const transaction = orderData.purchase_units[0].payments.captures[0];
+            console.log('Capture result', detalles, JSON.stringify(detalles, null, 2));
+            const transaction = detalles.purchase_units[0].payments.captures[0];
             alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
           });
 
